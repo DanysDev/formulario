@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Formulario freeCodeCamp</title>
+</head>
+<body>
+    
+    <h1>freeCodeCamp Survey Form</h1>
+    <p class="subtitle">Thank you for taking the time to help us improve the platform</p>
+    <main class="main">
+        <form id="survey-form" class="form main__form">
+            
+            <div class="name form__name input__form">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+                
+             <div class="email form__email input__form">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>   
+
+             <div class="number form__number input__form">
+                <label id="number-label" for="number">Age(optional)</label>
+                <input type="number" id="number" placeholder="Age" min="1" max="99">
+            </div>   
+
+             <div class="dropdown form__dropdown">
+                <p>Which option best describes your current role?</p>
+                <select class="input__form" name="dropdown" id="dropdown" required>
+                    <option disabled selected value>Select curren role</option>
+                    <option value="Student">Student</option>
+                    <option value="full time job">Full time job</option>
+                    <option value="full time learn">Full time learn</option>
+                    <option value="prefer not to say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>   
+
+                    
+            <div class="radio__btn form__radio-btn">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <div class="radio__btn-input">
+                    <input type="radio" id="btn-one" name="radio-btn" checked>
+                    <label for="btn-one">Definitely</label>
+                </div>
+                    
+                <div class="radio__btn-input">
+                    <input type="radio" id="btn-two" name="radio-btn">
+                    <label for="btn-two">Maybe</label>
+                </div>
+                    
+                <div class="radio__btn-input">
+                    <input type="radio" id="btn-end" name="radio-btn">
+                    <label for="btn-end">Not sure</label>
+                </div>
+            </div>
+
+            
+            <div class="fav form__fav input__form">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select class="input__form" name="dropdown-favorite" id="dropdown-select" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Student">Challenges</option>
+                    <option value="full time job">Projects</option>
+                    <option value="full time learn">Community</option>
+                    <option value="prefer not to say">Open Source</option>
+                </select>
+            </div>
+            
+            <div class="check form__check">
+                
+                <p>What would you like to see improved? <i>(Check all that apply)</i></p>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Front-end Projects" type="checkbox">
+                        Front-end Projects
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Back-end Projects" type="checkbox">
+                        Back-end Projects
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Data Visualization" type="checkbox">
+                        Data Visualization
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Challenges" type="checkbox">
+                        Challenges
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Open Source Community" type="checkbox">
+                        Open Source Community
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Gitter help rooms" type="checkbox">
+                        Gitter help rooms
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Videos" type="checkbox">
+                        Videos
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="City Meetups" type="checkbox">
+                        City Meetups
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Wiki" type="checkbox">
+                        Wiki
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Forum" type="checkbox">
+                        Forum
+                    </label>
+                </div>
+                
+                <div class="check__input">
+                    <label>
+                        <input name="check" value="Additional Courses" type="checkbox">
+                        Additional Courses
+                    </label>
+                </div>
+
+            </div>
+            
+            <div class="textarea form__textarea">
+                <p>Any comments or suggestions?</p>
+                <textarea id="textarea" class="input__form" name="area" id="form-area" cols="30" rows="7" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+            <input type="submit" value="Submit" id="button_submit">
+        </form>
+    </main>
+</body>
+</html>

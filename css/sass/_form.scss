@@ -1,0 +1,27 @@
+
+
+.radio__btn {
+    font-size: 1rem;
+    padding-bottom: 16px;
+    p {
+        font-size: 1.2rem;
+        font-weight: 800;
+        padding: 16px 0 24px 0;
+    }
+    .radio__btn-input {
+        padding-bottom: 6px;
+    }
+}
+
+.check {
+    padding: 24px 0;
+    font-size: 1rem;
+    p {
+        font-size: 1.2rem;
+        font-weight: 800;
+        padding: 16px 0 24px 0;
+    }
+    &__input {
+        padding-bottom: 8px;
+    }
+}
